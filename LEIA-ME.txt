@@ -1,0 +1,151 @@
+PORTAL DE DADOS GESEL - ESTRUTURA ORGANIZADA
+=============================================
+
+Este pacote foi criado a partir do HTML original fornecido.
+A estrutura, o visual, os dados e a lógica foram separados em arquivos independentes, sem adicionar React, Node ou frameworks.
+
+ESTRUTURA DO PROJETO
+--------------------
+Portal-GESEL-organizado/
+|
+|-- index.html
+|-- LEIA-ME.txt
+|
+|-- css/
+|   `-- style.css
+|
+|-- js/
+|   |-- app.js
+|   |-- auth.js
+|   |-- config.js
+|   |-- dom.js
+|   |-- navigation.js
+|   |-- theme.js
+|   |-- tdse.js
+|   `-- livros.js
+|
+`-- data/
+    |-- tdse-data.js
+    `-- livros-data.js
+
+O QUE CADA ARQUIVO FAZ
+----------------------
+index.html
+  Contém somente a estrutura e o conteúdo fixo das páginas do portal.
+  Não contém mais o grande bloco de CSS nem o grande bloco de JavaScript do arquivo original.
+
+css/style.css
+  Todo o visual do site: cores, tamanhos, cards, login, páginas internas, responsividade, modo escuro etc.
+
+js/app.js
+  É o ponto de inicialização do portal e liga as demais partes.
+  Normalmente você não precisará editar este arquivo.
+
+js/auth.js
+  Login, logout, sessão e botão de mostrar/ocultar senha.
+
+js/config.js
+  Configurações gerais do portal, incluindo o login atual e a quantidade de TDSEs por página.
+
+js/dom.js
+  Funções auxiliares reutilizadas por outras áreas, como normalização de texto e proteção do HTML exibido nos cards.
+
+js/navigation.js
+  Controla a navegação entre Início, Energy Institute, TDSEs, Livros e futuras páginas internas.
+
+js/theme.js
+  Controla o modo claro/escuro.
+
+js/tdse.js
+  Busca, filtros, ordenação, paginação e criação dos cards dos TDSEs.
+
+data/tdse-data.js
+  Contém somente os registros dos TDSEs.
+  Este é o principal arquivo para adicionar, remover ou corrigir um TDSE.
+
+js/livros.js
+  Busca, filtros, ordenação, criação dos cards dos livros e download das capas.
+
+data/livros-data.js
+  Contém somente os registros dos livros.
+  Este é o principal arquivo para adicionar, remover ou corrigir um livro.
+
+COMO USAR
+---------
+1. Mantenha os nomes dos arquivos e das pastas exatamente como estão.
+2. Mantenha a pasta inteira do projeto junta.
+3. Para visualizar localmente, abra o index.html no navegador.
+4. Para publicar, envie a pasta inteira ao servidor, preservando css/, js/ e data/.
+
+O QUE ENVIAR PARA UMA IA EM CADA SITUAÇÃO
+-----------------------------------------
+Adicionar ou corrigir TDSEs:
+  data/tdse-data.js
+
+Alterar filtros, cards ou paginação dos TDSEs:
+  index.html
+  js/tdse.js
+  data/tdse-data.js
+  css/style.css
+
+Adicionar ou corrigir livros:
+  data/livros-data.js
+
+Alterar filtros, cards, capas ou comportamento dos livros:
+  index.html
+  js/livros.js
+  data/livros-data.js
+  css/style.css
+
+Alterar cores, tamanhos, espaçamentos ou responsividade:
+  index.html
+  css/style.css
+
+Alterar login:
+  index.html
+  js/auth.js
+  js/config.js
+
+Alterar navegação entre páginas:
+  index.html
+  js/navigation.js
+  js/app.js
+
+Alterar modo claro/escuro:
+  css/style.css
+  js/theme.js
+
+CRIAR UMA NOVA ÁREA, COMO "ARTIGOS DE OPINIÃO"
+-----------------------------------------------
+Envie para a IA:
+  index.html
+  css/style.css
+  js/app.js
+  js/navigation.js
+  js/dom.js
+
+E diga que ela pode criar, se necessário:
+  js/artigos.js
+  data/artigos-data.js
+
+Depois disso, nas próximas atualizações de artigos, normalmente bastará enviar os arquivos específicos de artigos.
+
+MODELO DE PEDIDO PARA UMA IA
+----------------------------
+Estou enviando os arquivos atuais do Site GESEL.
+Quero [DESCREVA A ALTERAÇÃO].
+Não sei programar, então me devolva os arquivos completos que forem modificados, prontos para substituir os antigos.
+Não altere nenhuma funcionalidade que não esteja relacionada ao pedido.
+Preserve o funcionamento atual do site.
+Se precisar criar novos arquivos, informe exatamente em qual pasta devo colocá-los.
+
+IMPORTANTE SOBRE O LOGIN
+------------------------
+O login continua com o mesmo funcionamento do HTML original: usuário e senha são verificados pelo JavaScript no navegador.
+Mover essas informações para config.js organiza o projeto, mas não transforma esse login em uma autenticação segura.
+Para proteção real de conteúdo restrito, futuramente será necessário fazer a autenticação no servidor/backend.
+
+SOBRE ESTA ORGANIZAÇÃO
+----------------------
+A separação foi feita usando JavaScript clássico carregado por arquivos externos, em vez de módulos import/export.
+Isso mantém o projeto simples e evita exigir ferramentas de compilação, Node.js ou um framework para funcionar.

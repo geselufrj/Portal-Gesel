@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portal de Dados GESEL</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <a class="brand" href="#inicio" data-app-page="home">
+      <div class="brand-logo-box">
+        <img src="https://gesel.ie.ufrj.br/wp-content/themes/gesel-2022/images/logo-header.svg" alt="GESEL UFRJ">
+      </div>
+      <div class="brand-divider"></div>
+      <div class="brand-title">
+        <strong>Portal de Dados</strong>
+        <span>Ferramentas e aplicações GESEL/UFRJ</span>
+      </div>
+    </a>
+
+    <nav class="nav-actions">
+      <button class="theme-btn" id="themeToggle" type="button" title="Alternar tema">
+        <span class="material-icons-round">dark_mode</span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <div id="page-home" class="app-page active">
+    <section class="hero">
+      <div class="hero-content">
+        <div class="eyebrow">
+          <span class="material-icons-round">bolt</span>
+          GESEL - UFRJ 
+        </div>
+
+        <h1>Portal de Dados <span>GESEL</span></h1>
+
+        <p>
+          Acesse dashboards interativos, publicações e materiais de apoio desenvolvidos pelo GESEL.
+        </p>
+
+      </div>
+
+         </section>
+
+    
+    <section class="section" id="ferramentas">
+      <div class="section-head">
+        <div>
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="card">
+          <div class="card-top">
+            <div class="card-icon"><span class="material-icons-round">analytics</span></div>
+            <span class="card-status">Disponível</span>
+          </div>
+          <h3>Dashboard Energy Institute</h3>
+          <p>Espaço para visualizar os dados do Energy Institue.</p>
+          <div class="card-buttons">
+            <a class="btn-card btn-info" href="#energy-institute" data-app-page="energy-institute">
+              Informações
+            </a>
+            <a class="btn-card btn-dashboard" href="https://script.google.com/macros/s/AKfycbx57lpZPUZB1JH-abCqN9F77QbwkJikk_eFVq6kTfEbDsdPXNZjQMQ1XtkfOrJ2LUj43g/exec" target="_blank" rel="noopener">
+              Abrir dashboard
+            </a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-top">
+            <div class="card-icon"><span class="material-icons-round">article</span></div>
+            <span class="card-status">Publicações</span>
+          </div>
+          <h3>Artigos de Opinião</h3>
+          <p>Artigos de opinião publicados por pesquisadores do GESEL.</p>
+          <div class="card-buttons">
+            <a class="btn-card btn-dashboard" href="#artigos" data-app-page="artigos">
+              Ver artigos
+            </a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-top">
+            <div class="card-icon"><span class="material-icons-round">description</span></div>
+            <span class="card-status">Publicações</span>
+          </div>
+          <h3>TDSEs</h3>
+          <p>Textos de Discussão do Setor Elétrico.</p>
+          <div class="card-buttons">
+            <a class="btn-card btn-dashboard" href="#tdse" data-app-page="tdse">
+              Ver TDSEs
+            </a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-top">
+            <div class="card-icon"><span class="material-icons-round">menu_book</span></div>
+            <span class="card-status">Biblioteca</span>
+          </div>
+          <h3>Livros</h3>
+          <p>Livros publicados pelo GESEL.</p>
+          <div class="card-buttons">
+            <a class="btn-card btn-dashboard" href="#livros" data-app-page="livros">
+              Ver livros
+            </a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-top">
+            <div class="card-icon"><span class="material-icons-round">school</span></div>
+            <span class="card-status">Formação</span>
+          </div>
+          <h3>Cursos</h3>
+          <p>Cursos de formação e capacitação em temas estratégicos do setor elétrico.</p>
+          <div class="card-buttons">
+            <a class="btn-card btn-dashboard" href="#cursos" data-app-page="cursos">
+              Ver cursos
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    
+  
+    </div>
+
+    <!-- Pagina interna simulada: Energy Institute -->
+    <div id="page-energy-institute" class="app-page">
+      <section class="info-page-hero">
+        <div class="eyebrow">
+          <span class="material-icons-round">analytics</span>
+          Dashboard Energy Institute
+        </div>
+
+        <h1 class="info-page-title">
+          Informações e instruções do <span class="info-page-accent">Dashboard Energy Institute</span>
+        </h1>
+      </section>
+
+      <section class="info-shell">
+        <aside class="info-sidebar">
+          
+
+          <div class="info-actions">
+            <a class="btn btn-primary"
+               href="https://script.google.com/macros/s/AKfycbx57lpZPUZB1JH-abCqN9F77QbwkJikk_eFVq6kTfEbDsdPXNZjQMQ1XtkfOrJ2LUj43g/exec"
+               target="_blank"
+               rel="noopener">
+              <span class="material-icons-round">open_in_new</span>
+              Abrir dashboard
+            </a>
+
+            <a class="btn btn-secondary" href="#inicio" data-app-page="home">
+              <span class="material-icons-round">arrow_back</span>
+              Voltar ao portal
+            </a>
+          </div>
+        </aside>
+
+        <article class="info-content">
+          <div class="info-block" id="instrucoes">
+            <h3>Instruções de uso</h3>
+            <p>
+             <ul>
+              <li>Selecione o <strong>indicador</strong> que deseja analisar no painel lateral;</li>
+              <li>Escolha <strong>uma ou mais fontes de energia</strong> marcando ou desmarcando as opções disponíveis;</li>
+              <li>Pesquise ou selecione os países que deseja incluir na análise comparativa;</li>
+              <li>Utilize o controle <strong>deslizante (Ano)</strong> para definir o período de análise;</li>
+              <li>Escolha o passo temporal <strong>(1, 5 ou 10 anos)</strong> para ajustar o intervalo entre os dados apresentados;</li>
+              <li>Passe o cursor sobre o gráfico para visualizar os valores detalhados de cada série;</li>
+              <li>Use os botões da barra superior para alterar a visualização, exportar para salvar a visualização do gráfico em formato <strong>PNG</strong> ou exportar os dados selecionados em <strong>Excel (.XLS)</strong>.</li>
+            </ul>
+          </div>
+
+          <div class="info-block" id="dados">
+            <h3>Sobre os dados</h3>
+            <p>
+              Os dados apresentados neste dashboard são provenientes da base Statistical Review of World Energy,
+              publicada pelo Energy Institute, que reúne informações globais sobre energia organizadas por país, região e
+              fonte energética. A base possui periodicidade anual, com séries históricas que, para diversos indicadores,
+              remontam a 1965, permitindo análises de longo prazo e comparações entre diferentes países e fontes de
+              energia.
+              
+            </p>
+          </div>
+
+          <div class="info-block" id="metodologia">
+            <h3>Metodologia</h3>
+            <p>
+              Para este dashboard foram selecionados <strong>23 indicadores</strong> considerados mais aderentes às atividades 
+              de pesquisa desenvolvidas pelo GESEL. Os indicadores abrangem informações sobre geração e consumo de energia, 
+              emissões de CO₂, oferta de energia e outros aspectos relevantes do setor elétrico, organizados por fonte energética e 
+              tipo de informação.
+            </p>
+          </div>
+
+          <div class="info-block" id="fontes">
+            <h3>Fonte</h3>
+            <p>
+  <a href="https://www.energyinst.org/" target="_blank">
+    Energy Institute
+  </a>
+</p>
+            </div>
+          </div>
+        </article>
+      </section>
+    </div>
+
+
+    <!-- Página interna: TDSE -->
+    <div id="page-tdse" class="app-page">
+      <section class="info-page-hero">
+        <div class="eyebrow">
+          <span class="material-icons-round">description</span>
+          Publicações GESEL
+        </div>
+
+        <h1 class="info-page-title">
+          Textos de Discussão do <span class="info-page-accent">Setor Elétrico</span>
+        </h1>
+
+        <p class="info-page-description">
+          Página para consulta, organização e acesso aos TDSEs do GESEL.
+        </p>
+      </section>
+
+      <section class="info-shell">
+        <aside class="info-sidebar">
+          <h3>TDSEs</h3>
+          <div class="info-menu">
+            <a class="btn btn-secondary" href="#inicio" data-app-page="home">
+              <span class="material-icons-round">arrow_back</span>
+              Voltar ao portal
+            </a>
+          </div>
+        </aside>
+
+        <article class="info-content">
+          <div class="info-block" id="tdse-consulta">
+            <h3>Consulta de TDSEs</h3>
+            <p>
+              Pesquise por número, título, autor ou tema. Também é possível filtrar por tema e ano e alterar a ordem de exibição.
+            </p>
+
+            <div class="tdse-toolbar" role="search" aria-label="Filtros dos TDSEs">
+              <label class="tdse-field" for="tdse-search">
+                <span class="material-icons-round">search</span>
+                <input id="tdse-search" type="search" placeholder="Número, título, autor ou tema..." autocomplete="off">
+              </label>
+
+              <label class="tdse-field" for="tdse-theme">
+                Tema
+                <select id="tdse-theme">
+                  <option value="">Todos</option>
+                </select>
+              </label>
+
+              <label class="tdse-field" for="tdse-year">
+                Ano
+                <select id="tdse-year">
+                  <option value="">Todos</option>
+                </select>
+              </label>
+
+              <label class="tdse-field" for="tdse-order">
+                Ordenar
+                <select id="tdse-order">
+                  <option value="recentes">Mais recentes</option>
+                  <option value="antigos">Mais antigos</option>
+                </select>
+              </label>
+            </div>
+
+            <div class="tdse-results-bar">
+              <span id="tdse-results-count" class="tdse-results-count" aria-live="polite"></span>
+              <button id="tdse-clear" class="tdse-clear" type="button">Limpar filtros</button>
+            </div>
+
+            <div id="tdse-grid" class="tdse-grid"></div>
+
+            <div id="tdse-empty" class="tdse-empty" role="status">
+              <span class="material-icons-round" aria-hidden="true">search_off</span><br>
+              Nenhum TDSE corresponde aos filtros selecionados.
+            </div>
+
+            <nav id="tdse-pagination" class="tdse-pagination" aria-label="Paginação dos TDSEs"></nav>
+          </div>
+
+          <div class="info-block" id="tdse-sobre">
+            <h3>Sobre os TDSEs</h3>
+            <p>
+              Os TDSEs reúnem textos de discussão, análises técnicas e produções acadêmicas voltadas ao setor elétrico.
+            </p>
+          </div>
+        </article>
+      </section>
+    </div>
+
+
+    <!-- Página interna: Artigos de Opinião -->
+    <div id="page-artigos" class="app-page">
+      <section class="info-page-hero">
+        <div class="eyebrow">
+          <span class="material-icons-round">article</span>
+          Publicações GESEL
+        </div>
+
+        <h1 class="info-page-title">
+          Artigos de <span class="info-page-accent">Opinião</span>
+        </h1>
+
+        <p class="info-page-description">
+          Consulte artigos publicados por pesquisadores do GESEL em diferentes veículos de comunicação.
+        </p>
+      </section>
+
+      <section class="info-shell">
+        <aside class="info-sidebar">
+          <h3>Artigos de Opinião</h3>
+          <div class="info-menu">
+            <a class="btn btn-secondary" href="#inicio" data-app-page="home">
+              <span class="material-icons-round">arrow_back</span>
+              Voltar ao portal
+            </a>
+          </div>
+        </aside>
+
+        <article class="info-content">
+          <div class="info-block" id="artigos-consulta">
+            <h3>Consulta de artigos</h3>
+            <p>
+              Pesquise por título, autor, tema ou fonte. Também é possível filtrar por tema e ano e alterar a ordem de exibição.
+            </p>
+
+            <div class="tdse-toolbar" role="search" aria-label="Filtros dos artigos de opinião">
+              <label class="tdse-field" for="artigos-search">
+                <span class="material-icons-round">search</span>
+                <input id="artigos-search" type="search" placeholder="Título, autor, tema ou fonte..." autocomplete="off">
+              </label>
+
+              <label class="tdse-field" for="artigos-theme">
+                Tema
+                <select id="artigos-theme">
+                  <option value="">Todos</option>
+                </select>
+              </label>
+
+              <label class="tdse-field" for="artigos-year">
+                Ano
+                <select id="artigos-year">
+                  <option value="">Todos</option>
+                </select>
+              </label>
+
+              <label class="tdse-field" for="artigos-order">
+                Ordenar
+                <select id="artigos-order">
+                  <option value="recentes">Mais recentes</option>
+                  <option value="antigos">Mais antigos</option>
+                </select>
+              </label>
+            </div>
+
+            <div class="tdse-results-bar">
+              <span id="artigos-results-count" class="tdse-results-count" aria-live="polite"></span>
+              <button id="artigos-clear" class="tdse-clear" type="button">Limpar filtros</button>
+            </div>
+
+            <div id="artigos-grid" class="tdse-grid"></div>
+
+            <div id="artigos-empty" class="tdse-empty" role="status">
+              <span class="material-icons-round" aria-hidden="true">search_off</span><br>
+              Nenhum artigo corresponde aos filtros selecionados.
+            </div>
+
+            <nav id="artigos-pagination" class="tdse-pagination" aria-label="Paginação dos artigos de opinião"></nav>
+          </div>
+
+          <div class="info-block" id="artigos-sobre">
+            <h3>Sobre os artigos</h3>
+            <p>
+              Esta área reúne artigos de opinião publicados por pesquisadores do GESEL em jornais, revistas, portais e outros veículos.
+            </p>
+          </div>
+        </article>
+      </section>
+    </div>
+
+
+    <!-- Página interna: Livros -->
+    <div id="page-livros" class="app-page">
+      <section class="info-page-hero">
+        <div class="eyebrow">
+          <span class="material-icons-round">menu_book</span>
+          Biblioteca GESEL
+        </div>
+
+        <h1 class="info-page-title">
+          Livros publicados pelo <span class="info-page-accent">GESEL</span>
+        </h1>
+
+        <p class="info-page-description">
+          Consulte os títulos, veja as empresas e instituições responsáveis e acesse cada publicação.
+        </p>
+      </section>
+
+      <section class="info-shell">
+        <aside class="info-sidebar">
+          <h3>Livros</h3>
+          <div class="info-menu">
+            <a class="btn btn-secondary" href="#inicio" data-app-page="home">
+              <span class="material-icons-round">arrow_back</span>
+              Voltar ao portal
+            </a>
+          </div>
+        </aside>
+
+        <article class="info-content">
+          <div class="info-block" id="livros-consulta">
+            <h3>Consulta de livros</h3>
+            <p>Pesquise pelo título ou pela empresa responsável e altere a ordem de exibição.</p>
+
+            <div class="books-toolbar" role="search" aria-label="Filtros dos livros">
+              <label class="tdse-field" for="books-search">
+                <span class="material-icons-round">search</span>
+                <input id="books-search" type="search" placeholder="Título ou empresa responsável..." autocomplete="off">
+              </label>
+
+              <label class="tdse-field" for="books-company">
+                Empresa
+                <select id="books-company">
+                  <option value="">Todas</option>
+                </select>
+              </label>
+
+              <label class="tdse-field" for="books-order">
+                Ordenar
+                <select id="books-order">
+                  <option value="original">Ordem original</option>
+                  <option value="titulo-az">Título A-Z</option>
+                  <option value="titulo-za">Título Z-A</option>
+                </select>
+              </label>
+            </div>
+
+            <div class="tdse-results-bar">
+              <span id="books-results-count" class="tdse-results-count" aria-live="polite"></span>
+              <button id="books-clear" class="tdse-clear" type="button">Limpar filtros</button>
+            </div>
+
+            <div id="books-grid" class="tdse-grid"></div>
+
+            <div id="books-empty" class="tdse-empty" role="status">
+              <span class="material-icons-round" aria-hidden="true">search_off</span><br>
+              Nenhum livro corresponde aos filtros selecionados.
+            </div>
+          </div>
+        </article>
+      </section>
+    </div>
+
+
+    <!-- Página interna: Cursos -->
+    <div id="page-cursos" class="app-page">
+      <section class="courses-hero">
+        <div class="courses-hero-inner">
+          <div class="eyebrow">
+            <span class="material-icons-round">school</span>
+            Formação GESEL
+          </div>
+
+          <h1 class="info-page-title">
+            Cursos <span class="info-page-accent">GESEL</span>
+          </h1>
+
+          <p class="info-page-description">
+            Formação e capacitação em temas estratégicos do setor elétrico.
+          </p>
+        </div>
+      </section>
+
+      <section class="courses-section">
+        <div class="courses-toolbar-top">
+          <a class="btn btn-secondary courses-back" href="#inicio" data-app-page="home">
+            <span class="material-icons-round" aria-hidden="true">arrow_back</span>
+            Voltar ao portal
+          </a>
+        </div>
+
+        <div class="courses-heading">
+          <div>
+            <h2>Cursos disponíveis</h2>
+            <span class="courses-heading-line" aria-hidden="true"></span>
+          </div>
+          <strong id="courses-count" class="courses-count"></strong>
+        </div>
+
+        <div class="courses-tools" role="search" aria-label="Pesquisar cursos">
+          <label class="courses-search" for="courses-search">
+            <span class="material-icons-round" aria-hidden="true">search</span>
+            <input id="courses-search" type="search" placeholder="Pesquisar por nome ou tema..." autocomplete="off">
+          </label>
+          <button id="courses-clear" class="courses-clear" type="button">Limpar pesquisa</button>
+        </div>
+
+        <div id="courses-grid" class="courses-grid"></div>
+
+        <div id="courses-empty" class="tdse-empty" role="status">
+          <span class="material-icons-round" aria-hidden="true">search_off</span><br>
+          Nenhum curso corresponde à pesquisa.
+        </div>
+      </section>
+    </div>
+
+
+  </main>
+
+  <footer class="footer">
+    <img src="https://gesel.ie.ufrj.br/wp-content/themes/gesel-2022/images/logo-header.svg" alt="GESEL UFRJ">
+    <p>
+      GESEL • Grupo de Estudos do Setor Elétrico<br>
+      Instituto de Economia • Universidade Federal do Rio de Janeiro
+    </p>
+  </footer>
+
+  <script defer src="./js/config.js"></script>
+  <script defer src="./data/livros-data.js"></script>
+  <script defer src="./data/tdse-data.js"></script>
+  <script defer src="./data/artigos-data.js"></script>
+  <script defer src="./data/cursos-data.js"></script>
+  <script defer src="./js/dom.js"></script>
+  <script defer src="./js/navigation.js"></script>
+  <script defer src="./js/theme.js"></script>
+  <script defer src="./js/livros.js"></script>
+  <script defer src="./js/tdse.js"></script>
+  <script defer src="./js/artigos.js"></script>
+  <script defer src="./js/cursos.js"></script>
+  <script defer src="./js/app.js"></script>
+</body>
+</html>
