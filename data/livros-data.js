@@ -1,3 +1,5 @@
+livros-data.js
+100%
 /*
   BANCO DE DADOS DOS LIVROS
   Edite este arquivo para adicionar, remover ou atualizar livros.
@@ -6,11 +8,18 @@
   window.GESEL_DATA = window.GESEL_DATA || {};
   window.GESEL_DATA.books = [
       {
+            "titulo": "Experiências Internacionais e o Processo de Abertura do Mercado Elétrico Brasileiro",
+            "empresas": ["EDP"],
+            "link": "https://gesel.ie.ufrj.br/wp-content/uploads/2026/09/Experiencias_Internacionais_e_o_Processo_de_Abertura_do_Mercado_Eletrico_Brasileiro.pdf",
+            "capa": "https://gesel.ie.ufrj.br/wp-content/uploads/2026/09/Captura-de-tela-2026-09-23-125256.png"
+      },
+{
             "titulo": "Um caminho para o mercado de hidrogênio de baixo carbono no Brasil",
             "empresas": ["EDP", "Energia Pecém"],
             "link": "https://gesel.ie.ufrj.br/wp-content/uploads/2026/03/LivroH2EDP.pdf",
             "capa": "https://gesel.ie.ufrj.br/wp-content/uploads/2026/03/Captura-de-tela-2026-03-24-105546.png"
       },
+
       {
             "titulo": "Desafios de Estabelecer Incentivos Regulatórios Corretos na Era das Tecnologias Exponenciais → Sem link",
             "empresas": ["EDP","Celesc"],
