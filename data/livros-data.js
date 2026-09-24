@@ -1,5 +1,3 @@
-livros-data.js
-100%
 /*
   BANCO DE DADOS DOS LIVROS
   Edite este arquivo para adicionar, remover ou atualizar livros.
